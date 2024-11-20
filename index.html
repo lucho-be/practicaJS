@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios JonMircha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="Ejercicios JonMircha.js"></script>
+</head>
+
+<body>
+  <section id="contenedorTitulo">
+    <h1 class="tituloPagina">Ejercicios JavaScript JonMircha</h1>
+  </section>
+  <section id="presentacion" class="texto">
+    <p>El objetivo de esta página es plasmar de una forma gamificada los ejercicios del <a target="_blank" href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA">curso de JavaScript de JonMircha</a>, con el fin de practicar también mis conocimientos de HTML y CSS.</p>
+  </section>
+  <section id="contenedorEjercicios">
+    <div class="ejercicio">
+      <h2 class="tituloEjercicio">Ejercicio 1</h2>
+      <p class="consigna">Función que cuenta el número de caracteres de una cadena de texto.</p>
+      <input type="text" id="ej1" class="inputEjercicio" placeholder="Ingresa una cadena">
+      <input type="button" class="boton-ejecutar" value="Ejecutar" onclick="contarCaracteres()">
+      <input type="button" class="boton-reiniciar" value="Limpiar" onclick="limpiarUno()">
+      <p class="resultado" id="resultado1">Resultado de la función</p>
+    </div>
+    <hr>
+    <div class="ejercicio">
+      <h2 class="tituloEjercicio">Ejercicio 2</h2>
+      <p class="consigna">Función que te devuelve el texto recortado según el número de caracteres
+        indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".</p>
+        <div id="inputsEj2">
+        <input type="number" name="" class="inputEjercicio" id="ej2-num" placeholder="Ingresar un número">
+      <input type="text" id="ej2" class="inputEjercicio" placeholder="Ingresa una cadena">
+    </div>
+      <input type="button" class="boton-ejecutar" value="Ejecutar" onclick="cortarTexto()">
+      <input type="button" class="boton-reiniciar" value="Limpiar" onclick="limpiarDos()">
+      <p class="resultado" id="resultado2">Resultado de la función</p>
+    </div>
+    <hr>
+  </section>
+
+</body>
+<footer>
+  <p>Creado por <a target="_blank" href="https://github.com/lucho-be">Luciano Bellante.</a></p>
+</footer>
+
+</html>

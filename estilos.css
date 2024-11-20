@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 241);
+    
+}
+
+body * {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+#presentacion {
+    margin: 5em 3em;
+    font-size: 1.2em;
+    text-align: justify;
+    background-color: #b300ff1e;
+    padding: 2em;
+    border: dashed 0.1em;
+}
+
+#contenedorTitulo {
+    background-color: #ffee00;
+    margin: 0px;
+    border: solid 0.2em black;
+    box-sizing: border-box;
+    border-radius: 0px 0px 40px 40px;
+    width: 100%;
+}
+
+/* #contenedorEjercicios {
+    background-color: lightgoldenrodyellow;
+    margin: 20px 30px 0px 20px;
+    
+} */
+
+.tituloPagina {
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: bolder;
+    padding: 0.5em;
+}
+
+.ejercicio {
+    margin: 30px 30px;
+}
+
+.tituloEjercicio {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin: 0px 0px 20px 30px;
+    text-decoration: underline dashed;
+    text-decoration-color: #e58ce9;
+}
+
+.consigna {
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+.inputEjercicio {
+    display: block;
+    margin: 20px 0px 20px 30px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    font-weight: 450;
+    font-size: medium;
+    width: 15em;
+    height: 40px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+.boton-ejecutar {
+    font-weight: 500;
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: pink;
+    margin: 20px 0px 20px 30px;
+    cursor: pointer;
+}
+
+.boton-reiniciar{
+    font-weight: 500;
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ffeed6;
+    margin: 20px 0px 20px 30px;
+    cursor: pointer;
+}
+
+.resultado {
+    display: block;
+    margin: 20px 0px 20px 30px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    font-size: medium;
+    font-weight: 450;
+    width: max-content;
+    height: 60px;
+    padding: 0px 50px 0px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    color: gray;
+}
+
+.resultado-negro {
+    color: black;
+}
+
+hr {
+    width: 75%;
+    background-color:rgb(252, 228, 255);
+    height: 2px;
+    border: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#inputsEj2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #b300ff1e;
+    margin: 0px;
+    border: solid 0.1em black;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+footer > p,a {
+    font-family: 'Courier New', Courier, monospace; 
+}
