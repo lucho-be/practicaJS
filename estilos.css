@@ -53,7 +53,8 @@ a {
     font-size: 1.6em;
     font-weight: 600;
     margin: 0px 0px 20px 30px;
-    text-decoration: underline dashed;
+    text-decoration: underline;
+    text-decoration-style: dashed;
     text-decoration-color: #e58ce9;
 }
 
