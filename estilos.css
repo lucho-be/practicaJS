@@ -20,7 +20,9 @@ a {
     text-align: justify;
     background-color: #b300ff1e;
     padding: 2em;
-    border: dashed 0.1em;
+    border: 0.1em;
+    border-style: dashed;
+    border-color: #e58ce9;
 }
 
 #contenedorTitulo {
