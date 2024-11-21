@@ -14,8 +14,8 @@ function contarCaracteres() {
   let cadena = document.getElementById("ej1").value;
   let resultado = document.getElementById("resultado1");
   if (cadena.length == 0) {
-    alert("No ingresaste texto")
-}
+    alert("No ingresaste texto");
+  }
   for (let i = 0; i < cadena.length; i++) {
     let contador = 1;
     contador = contador + i;
@@ -24,23 +24,22 @@ function contarCaracteres() {
   resultado.classList.add("resultado-negro");
 }
 
-function limpiarUno () {
-document.getElementById("ej1").value = ""
-document.getElementById("resultado1").innerText = "Resultado de la función";
-document.getElementById("resultado1").classList.remove("resultado-negro");
-
+function limpiarUno() {
+  document.getElementById("ej1").value = "";
+  document.getElementById("resultado1").innerText = "Resultado de la función";
+  document.getElementById("resultado1").classList.remove("resultado-negro");
 }
 
 //2 - Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".
 
-function cortarTexto () {
-
+function cortarTexto() {
   let cadena = document.getElementById("ej2").value;
-  let numero =document.getElementById("ej2-num").value;
+  let numero = document.getElementById("ej2-num").value;
   let resultado2 = document.getElementById("resultado2");
 
   if (cadena == "" || numero == "") {
-    resultado2.innerHTML = '<p style="color: red;font-weight:bolder">Falta un dato</p>';
+    resultado2.innerHTML =
+      '<p style="color: red;font-weight:bolder">Falta un dato</p>';
   } else {
     let cadenaFinal = [];
     for (let i = 0; i < numero; i++) {
@@ -50,28 +49,31 @@ function cortarTexto () {
   }
 }
 
-function limpiarDos () {
+function limpiarDos() {
   document.getElementById("ej2").value = "";
   document.getElementById("ej2-num").value = "";
   document.getElementById("resultado2").innerText = "Resultado de la función";
   document.getElementById("resultado2").classList.remove("resultado-negro");
-  
-  }
-
-
+}
 
 //3 - Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].
 
-let resultado3 = document.getElementById("ejercicio3");
-
-let separarTexto = (cadena = "", caracter = undefined) =>
+/* let separarTexto = (cadena, caracter) =>
   !cadena
     ? (resultado3.innerText = "No ingresaste la cadena")
     : caracter === undefined
     ? (resultado3.innerText = "No ingresaste el separador")
-    : (resultado3.innerHTML = cadena.split(caracter));
+    : (resultado3.innerHTML = cadena.split(caracter)); */
 
-separarTexto("hola como estas", " ");
+let separarTexto = function (cadena, caracter) {
+  let cadena = document.getElementById("ej3").value;
+  let caracter = document.getElementById("ej3-caracter").value;
+  let resultado3 = document.getElementById("resultado3");
+
+  if (cadena == " " || caracter == " ") {
+    resultado3.innerText = "Falta un dato";
+  }
+};
 
 //4 - Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
 
