@@ -21,7 +21,6 @@ function contarCaracteres() {
     contador = contador + i;
     resultado.innerText = `El texto ingresado tiene ${contador} caracteres.`;
   }
-  resultado.classList.add("resultado-negro");
 }
 
 function limpiarUno() {
